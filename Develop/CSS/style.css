@@ -1,0 +1,33 @@
+:root {
+    --background: #3d9ee4;;
+    --background2: #87dfb6;
+    --colorText: #ffffff;
+    --button: #339169;
+    --buttonHover: #54b5d3;
+}
+textarea {
+    resize: none;
+}
+.customBG {
+    background-color: var(--background);
+}
+.customBG2 {
+    background-color: var(--background2);
+}
+.customText {
+    color: var(--colorText);
+}
+.custom-btn {
+    background-color: var(--button);
+    color: var(--colorText);
+}
+.custom-btn:hover {
+    background-color: var(--buttonHover);
+    color: var(--colorText);
+}
+.customnavbar{
+    color: var(--background);
+    text-align: center;
+}
+
+  

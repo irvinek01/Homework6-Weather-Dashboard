@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,35 @@
     <link rel="stylesheet" href="./Develop/CSS/jass.css" />
     <link rel="stylesheet" href="./Develop/CSS/style.css" />
 </head>
+
 <body>
 
-<div>
-    <form id="form">
-        <textarea id="searchCity" placeholder="Search City" ></textarea>
-        <input type="submit" value="Search City">
-    </form>
-</div>
+    <nav class="navbar customnavbar">
+        <h1>Weather Dashboard</h1>
+    </nav>
 
-    <div id="searchResults"></div>
-    
+    <div class="flex-row flex-start justify-center min-100-vh ">
+
+        <div class="col-12 col-md-3 p-3 customBG2 ">
+            <form id="form" class="mb-2 p-3 customBG ">
+                <textarea id="searchCity" placeholder="Search City"></textarea>
+                <input type="submit" value="Search City" class="custom-btn .custom-btn:hover">
+            </form>
+            <div id="localStorage" class="p-3 customBG">LocalStorage</div>
+        </div>
+
+        <div class="col-12 col-md-9 p-3 customBG">
+            <div id="searchResults" class="p-1 m-1 customBG2">RESULT</div>
+            <div id="5dayForecast" class="p-1 m-1 customBG2">5DAY</div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./Develop/JSCRIPT/jscript.js"></script>
 
 </body>
+
 </html>
