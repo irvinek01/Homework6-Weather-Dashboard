@@ -20,16 +20,16 @@
     <div class="flex-row flex-start justify-center min-100-vh ">
 
         <div class="col-12 col-md-3 p-3 customBG2 ">
-            <form id="form" class="mb-2 p-3 customBG ">
-                <textarea id="searchCity" placeholder="Search City"></textarea>
-                <input type="submit" value="Search City" class="custom-btn .custom-btn:hover">
+            <form id="form" class="m-5 ">
+                <textarea id="searchCity" placeholder="Search City" onfocus="clearContentTextArea(this);"></textarea>
+                <button type="submit" class="custom-btn .custom-btn:hover">Search City</button>
             </form>
-            <div id="localStorage" class="p-3 customBG">LocalStorage</div>
+            <div id="savedCity" class="p-3 mb-2 customBG">Saved City</div>
         </div>
 
         <div class="col-12 col-md-9 p-3 customBG">
-            <div id="searchResults" class="p-1 m-1 customBG2">RESULT</div>
-            <div id="5dayForecast" class="p-1 m-1 customBG2">5DAY</div>
+            <div id="searchResults" class="p-1 m-1 customBG2">CITY</div>
+            <div id="fiveDayForecast" class="flex-row p-1 m-1 customBG2 ">5-DAY FORECAST</div>
         </div>
 
     </div>

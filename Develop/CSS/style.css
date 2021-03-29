@@ -29,5 +29,14 @@ textarea {
     color: var(--background);
     text-align: center;
 }
-
+.eachDayForecast p{
+    font-size: 0.9em;
+}
+.eachDayForecast p:first-child{
+    font-weight:bolder;
+}
+.fiveDayForecastHeader{
+    font-weight:bolder;
+    font-size: 1em;
+}
   
