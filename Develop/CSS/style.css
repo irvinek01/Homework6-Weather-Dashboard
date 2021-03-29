@@ -1,12 +1,13 @@
 :root {
-    --background: #3d9ee4;;
-    --background2: #87dfb6;
+    --background: #5983a1;;
+    --background2: #7dbea0;
     --colorText: #ffffff;
-    --button: #339169;
+    --button: #00a55d;
     --buttonHover: #54b5d3;
 }
 textarea {
     resize: none;
+    height: 1.7em;
 }
 .customBG {
     background-color: var(--background);
@@ -17,13 +18,16 @@ textarea {
 .customText {
     color: var(--colorText);
 }
-.custom-btn {
+.custom-btn, .SavedCity {
     background-color: var(--button);
     color: var(--colorText);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    cursor: pointer;
 }
-.custom-btn:hover {
+.custom-btn:hover, .SavedCity:hover, .eachDayForecast:hover {
     background-color: var(--buttonHover);
     color: var(--colorText);
+    
 }
 .customnavbar{
     color: var(--background);
@@ -38,5 +42,30 @@ textarea {
 .fiveDayForecastHeader{
     font-weight:bolder;
     font-size: 1em;
+}
+.roundCorners {
+    border-radius: 0 1.9em 1.9em 1.9em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.uvlow {
+    background-color: lime;
+    color: #000000;
+}
+
+.uvmed {
+    background-color: yellow;
+    color: #000000;
+}
+
+.uvhigh {
+    background-color: orange;
+}
+
+.uvveryhigh {
+    background-color: red;
+}
+
+.uvtoohigh {
+    background-color: purple;
 }
   
