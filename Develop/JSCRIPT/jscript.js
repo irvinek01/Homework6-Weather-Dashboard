@@ -33,7 +33,7 @@ var printWeatherForecastToday = function (results) {
     searchResults.innerHTML = "";
     fiveDayForecast.innerHTML = "";
     searchResults.innerHTML = "CITY - WEATHER NOW";
-    fiveDayForecast.innerHTML = "5-DAY FORECAST";
+    fiveDayForecast.innerHTML = "5DAY FORECAST";
     cityMainWeatherEl = document.createElement("h3"); // All elements under "CITY - WEATHER NOW" except UV Index
     cityMainWeatherElIcon = document.createElement("img");
     cityMainTempEl = document.createElement("p");
@@ -50,7 +50,7 @@ var printWeatherForecastToday = function (results) {
     searchResults.appendChild(cityMainHumidEl);
     searchResults.appendChild(cityMainWindSpdEl);
     weatherForecast5Day(results.coord.lat, results.coord.lon); // Passes lat and lon of the city above to the next function
-    checkLocalStorage(); 
+    checkLocalStorage();
     displaySavedCities();
 }
 function weatherForecast5Day(cityLat, cityLon) { // For the onecall API
@@ -82,7 +82,8 @@ var printWeatherForecast5Day = function (results) { // Handles the 5 Day-forecas
     fiveDayForecastHeader = document.createElement("div");
     for (var i = 1; i <= 5; i++) { // Starts on the day after CITY WEATHER NOW, ends at the 5th day
         eachDayForecastDiv = document.createElement("div");
-        eachDayForecastDiv.classList.add("d-flex", "eachDayForecast", "p-1", "m-1", "roundCorners", "customBG");
+        eachDayForecastDiv.classList.add("d-flex", "eachDayForecast", "p-1", "m-1", "roundCorners", "align-items-center","flex-wrap", "col-xl-2",
+            "customBG", "justify-content-center");
         date = document.createElement("p");
         dayWeatherIcon = document.createElement("img");
         dayWeatherTemp = document.createElement("p");
