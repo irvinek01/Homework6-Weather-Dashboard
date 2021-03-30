@@ -1,6 +1,6 @@
 :root {
-    --background: #5983a1;;
-    --background2: #7dbea0;
+    --background: #4c88b3;;
+    --background2: #80bbe6;
     --colorText: #ffffff;
     --button: #00a55d;
     --buttonHover: #54b5d3;
@@ -18,7 +18,7 @@ textarea {
 .customText {
     color: var(--colorText);
 }
-.custom-btn, .SavedCity {
+.custom-btn, .SavedCity, .eachDayForecast {
     background-color: var(--button);
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     cursor: pointer;
@@ -44,7 +44,7 @@ textarea {
 }
 .roundCorners {
     border-radius: 0 1.9em 1.9em 1.9em;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .uvlow {
     background-color: lime;
@@ -59,8 +59,10 @@ textarea {
 }
 .uvveryhigh {
     background-color: red;
+    color: #ffffff;
 }
 .uvtoohigh {
     background-color: purple;
+    color: #ffffff;
 }
   

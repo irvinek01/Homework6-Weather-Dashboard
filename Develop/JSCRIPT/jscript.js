@@ -82,8 +82,8 @@ var printWeatherForecast5Day = function (results) { // Handles the 5 Day-forecas
     fiveDayForecastHeader = document.createElement("div");
     for (var i = 1; i <= 5; i++) { // Starts on the day after CITY WEATHER NOW, ends at the 5th day
         eachDayForecastDiv = document.createElement("div");
-        eachDayForecastDiv.classList.add("d-flex", "eachDayForecast", "p-1", "m-1", "roundCorners", "align-items-center","flex-wrap", "col-xl-2",
-            "customBG", "justify-content-center");
+        eachDayForecastDiv.classList.add("d-flex","eachDayForecast","p-1","m-1","roundCorners",
+            "align-items-center","flex-wrap","col-xl-2","justify-content-center");
         date = document.createElement("p");
         dayWeatherIcon = document.createElement("img");
         dayWeatherTemp = document.createElement("p");
